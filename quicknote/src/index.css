@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#222830] text-zinc-50;
+  }
+}
+
+@layer components {
+  .toolbar button {
+    @apply flex justify-center items-center px-4 w-8 h-8 text-xs rounded-sm sm:hover:bg-slate-600 visited:bg-transparent select-none;
+  }
+
+  .toolbar-scrollable::-webkit-scrollbar {
+    @apply w-[1px];
+  }
+  .toolbar-scrollable::-webkit-scrollbar-thumb {
+    @apply bg-slate-500;
+  }
+
+  .cdedi h2,
+  .cdedi h3 {
+    @apply mt-2 mb-3;
+  }
+
+  .cdedi h4,
+  .cdedi h5,
+  .cdedi h6 {
+    @apply mt-2 mb-1;
+  }
+  .cdedi h1,
+  .cdedi h2 {
+    @apply border-b-2 pb-4 border-slate-700;
+  }
+
+  .cdedi h5 {
+    @apply text-sm font-medium;
+  }
+
+  .cdedi h6 {
+    @apply text-xs font-medium;
+  }
+}
+
+.public-DraftEditor-content {
+  caret-color: white;
+}
